@@ -1,6 +1,8 @@
 # flutter_map_sample
 
-A new Flutter project.
+[flutter_map パッケージ](https://pub.dev/packages/flutter_map)を試してみた。
+- IOS上にMap（[OpenStreetMap](https://openstreetmap.jp/)）を表示
+- Mapにピンを追加
 
 ## Getting Started
 
@@ -14,6 +16,14 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+## 感想
+
+- 無料で使える
+- APIの設定が不要
+- マップの更新が古い
+- マップのデザインがダサい
+- 結果、無料でサクッと使えるのはgoodだが本格的なマップアプリの利用には向かない
 
 ## 参考
 
