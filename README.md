@@ -22,8 +22,8 @@ samples, guidance on mobile development, and a full API reference.
 - 無料で使える
 - APIの設定が不要
 - マップの更新が古い
-- マップのデザインがダサい
-- 結果、無料でサクッと使えるのはgoodだが本格的なマップアプリの利用には向かない
+- マップのデザインがダサい 
+結果、無料でサクッと使えるのはgoodだが本格的なマップアプリの利用には向かない
 
 ## 参考
 
