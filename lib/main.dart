@@ -39,25 +39,29 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
         body: FlutterMap(
           options: MapOptions(
-            center: LatLng(35.658034,139.701636),
+            // マップ生成時のマップの中心地
+            center: LatLng(35.658034, 139.701636),
             zoom: 14,
           ),
           layers: [
             TileLayerOptions(
-              urlTemplate: "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+              // urlTemplate: "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+              urlTemplate:
+                  // Gray
+                  "https://api.maptiler.com/maps/jp-mierune-gray/256/{z}/{x}/{y}.png?key=sOt92OC2qu6D9tV04ulO",
+              // Dark
+              // "https://api.maptiler.com/maps/jp-mierune-dark/256/{z}/{x}/{y}.png?key=sOt92OC2qu6D9tV04ulO",
               userAgentPackageName: 'com.example.app',
             ),
-            MarkerLayerOptions(
-              markers: [
-                Marker(
-                  point: LatLng(35.658034,139.701636),
-                  builder: (ctx) => const Icon(
-                    Icons.location_pin,
-                    color: Colors.redAccent,
-                  ),
+            MarkerLayerOptions(markers: [
+              Marker(
+                point: LatLng(35.658034, 139.701636),
+                builder: (ctx) => const Icon(
+                  Icons.location_pin,
+                  color: Colors.redAccent,
                 ),
-              ],
-            ),
+              ),
+            ]),
           ],
           nonRotatedChildren: [
             AttributionWidget.defaultWidget(
@@ -65,7 +69,6 @@ class _MyHomePageState extends State<MyHomePage> {
               onSourceTapped: null,
             ),
           ],
-        )
-    );
+        ));
   }
 }
